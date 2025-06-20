@@ -303,4 +303,4 @@ The codebase follows modern React patterns:
 
 
 
-Made wuth all ❤️ by Abhishek Hiwarkar
+Made with all ❤️ by Abhishek Hiwarkar
