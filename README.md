@@ -9,7 +9,7 @@ Backend Github
 
 ## 📋 Features
 
-### Frontend (React)
+### Frontend (React + Vite)
 - **Responsive Design**: Works seamlessly on mobile, tablet, and desktop
 - **Video Gallery**: Grid layout with 12 sample videos
 - **Search & Filter**: Search videos by title and filter by categories
@@ -18,6 +18,7 @@ Backend Github
 - **Comment System**: Add, edit, delete comments on videos
 - **Channel Management**: Create and manage personal channels
 - **Modern UI**: Clean, YouTube-inspired interface with Tailwind CSS
+- **Fast Development**: Lightning-fast HMR and build times with Vite
 
 ### Backend (Node.js & Express) - Ready for Implementation
 - RESTful API design
@@ -55,11 +56,11 @@ npm run install-all
 3. **Start development servers**
 ```bash
 npm run dev  --For backend
-npm start -- for frontend
+npm run dev -- for frontend (Vite)
 ```
 
 This will start:
-- Frontend: http://localhost:3000
+- Frontend: http://localhost:3000 (Vite dev server)
 - Backend: http://localhost:5000 
 
 
@@ -104,11 +105,13 @@ FRONTEND/
 │   └── setupTests.js
 ├── .env
 ├── .gitignore
+├── index.html
 ├── package-lock.json
 ├── package.json
-├── postcss.config.js
+├── postcss.config.cjs
 ├── README.md
-└── tailwind.config.js
+├── tailwind.config.cjs
+└── vite.config.js
 
 Backend folder structure
 BACKEND/
@@ -162,6 +165,7 @@ BACKEND/
 - ✅ User profile management
 - ✅ Mobile-responsive design
 - ✅ Mock data integration
+- ✅ Migrated from CRA to Vite for faster builds
 
 ### ✅ Completed (Backend)
 - ✅ MongoDB database setup
@@ -196,6 +200,7 @@ BACKEND/
 
 ### Frontend
 - **React 18** - UI library
+- **Vite** - Fast build tool and dev server
 - **Tailwind CSS** - Styling framework
 - **Lucide React** - Icon library
 - **Axios** - HTTP client
@@ -271,10 +276,11 @@ Current authentication features:
 ### Available Scripts
 
 - `npm run install-all` - Install all dependencies
-- `npm run dev` - Start both frontend and backend
-- `npm run client` - Start frontend only
+- `npm run dev` - Start both frontend (Vite) and backend
+- `npm run client` - Start frontend only (Vite dev server)
 - `npm run server` - Start backend only
-- `npm run build` - Build for production
+- `npm run build` - Build for production with Vite
+- `npm run preview` - Preview production build
 
 ### Code Structure
 
