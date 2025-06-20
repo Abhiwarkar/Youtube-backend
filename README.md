@@ -2,8 +2,10 @@
 
 A fully responsive YouTube clone built with the MERN stack (MongoDB, Express.js, React, Node.js) featuring video browsing, user authentication, channel management, and comment system.
 
-Frontend Code -- https://github.com/Abhiwarkar/Youtube-frontend
-Backend COde   --https://github.com/Abhiwarkar/Youtube-backend
+Frontend Github
+-- https://github.com/Abhiwarkar/Youtube-frontend
+Backend Github
+--https://github.com/Abhiwarkar/Youtube-backend
 
 ## 📋 Features
 
