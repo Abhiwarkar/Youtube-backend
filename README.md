@@ -40,10 +40,12 @@ Backend Github
 Frontend --git clone https://github.com/Abhiwarkar/Youtube-frontend
 cd Youtube-frontend
 
-```
-Backend --git clone https://github.com/Abhiwarkar/Youtube-backend
+Backend --
+git clone https://github.com/Abhiwarkar/Youtube-backend
 cd Youtube-backend
+
 ```
+
 
 2. **Install all dependencies**
 ```bash
