@@ -2,6 +2,9 @@
 
 A fully responsive YouTube clone built with the MERN stack (MongoDB, Express.js, React, Node.js) featuring video browsing, user authentication, channel management, and comment system.
 
+Frontend Code -- https://github.com/Abhiwarkar/Youtube-frontend
+Backend COde   --https://github.com/Abhiwarkar/Youtube-backend
+
 ## 📋 Features
 
 ### Frontend (React)
@@ -32,8 +35,12 @@ A fully responsive YouTube clone built with the MERN stack (MongoDB, Express.js,
 
 1. **Clone the repository**
 ```bash
-git clone <your-repo-url>
-cd youtube-clone
+Frontend --git clone https://github.com/Abhiwarkar/Youtube-frontend
+cd Youtube-frontend
+
+```
+Backend --git clone https://github.com/Abhiwarkar/Youtube-backend
+cd Youtube-backend
 ```
 
 2. **Install all dependencies**
@@ -43,100 +50,143 @@ npm run install-all
 
 3. **Start development servers**
 ```bash
-npm run dev
+npm run dev  --For backend
+npm start -- for frontend
 ```
 
 This will start:
 - Frontend: http://localhost:3000
-- Backend: http://localhost:5000 (when implemented)
+- Backend: http://localhost:5000 
 
-### Individual Development
-
-**Frontend only:**
-```bash
-npm run client
-```
-
-**Backend only:**
-```bash
-npm run server
-```
 
 ## 📁 Project Structure
 
 ```
-youtube-clone/
-├── frontend/                    # React Application
-│   ├── public/
-│   ├── src/
-│   │   ├── components/          # Reusable Components
-│   │   │   ├── Header.js
-│   │   │   ├── Sidebar.js
-│   │   │   ├── VideoCard.js
-│   │   │   ├── VideoPlayer.js
-│   │   │   ├── CommentSection.js
-│   │   │   ├── AuthModal.js
-│   │   │   └── ChannelForm.js
-│   │   ├── pages/               # Main Pages
-│   │   │   ├── HomePage.js
-│   │   │   ├── VideoPage.js
-│   │   │   ├── ChannelPage.js
-│   │   │   └── ProfilePage.js
-│   │   ├── context/             # React Context
-│   │   │   └── AuthContext.js
-│   │   ├── hooks/               # Custom Hooks
-│   │   │   ├── useAuth.js
-│   │   │   └── useApi.js
-│   │   ├── services/            # API Services
-│   │   │   └── api.js
-│   │   ├── utils/               # Helper Functions
-│   │   │   └── helpers.js
-│   │   ├── data/                # Mock Data
-│   │   │   └── mockData.js
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   └── index.css
-│   ├── package.json
-│   ├── tailwind.config.js
-│   └── postcss.config.js
-├── backend/                     # Node.js Server (Ready for Implementation)
-│   ├── config/
-│   ├── controllers/
-│   ├── middleware/
-│   ├── models/
-│   ├── routes/
+Frontend folder structure--
+FRONTEND/
+├── node_modules/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── AuthModal.js
+│   │   ├── ChannelForm.js
+│   │   ├── CommentSection.js
+│   │   ├── Header.js
+│   │   ├── Sidebar.js
+│   │   ├── VideoCard.js
+│   │   └── VideoPlayer.js
+│   ├── context/
+│   ├── data/
+│   │   └── mockData.js
+│   ├── hooks/
+│   │   ├── useApi.js
+│   │   └── useAuth.js
+│   ├── pages/
+│   │   ├── ChannelPage.js
+│   │   ├── HomePage.js
+│   │   ├── ProfilePage.js
+│   │   └── VideoPage.js
+│   ├── services/
+│   │   └── api.js
 │   ├── utils/
-│   └── server.js
+│   │   └── helpers.js
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.css
+│   ├── index.js
+│   ├── logo.svg
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+├── .env
 ├── .gitignore
+├── package-lock.json
+├── package.json
+├── postcss.config.js
 ├── README.md
-└── package.json
+└── tailwind.config.js
+
+Backend folder structure
+BACKEND/
+├── config/
+│   └── database.js
+├── controllers/
+│   ├── authController.js
+│   ├── channelController.js
+│   ├── commentController.js
+│   └── VideoController.js
+├── middleware/
+│   ├── auth.js
+│   └── errorHandler.js
+├── models/
+│   ├── Channel.js
+│   ├── Comment.js
+│   ├── User.js
+│   └── Video.js
+├── node_modules/
+├── routes/
+│   ├── auth.js
+│   ├── channels.js
+│   ├── comments.js
+│   └── videos.js
+├── seedData/
+│   └── seedDatabase.js
+├── utils/
+│   └── generateToken.js
+├── .env
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── server.js
 ```
+
 
 ## 🎯 Current Implementation Status
 
-### ✅ Completed (Frontend)
-- [x] Responsive header with search functionality
-- [x] Collapsible sidebar navigation
-- [x] Video grid with 12 sample videos
-- [x] Category filtering (Technology, Education, Design, etc.)
-- [x] Video search functionality
-- [x] User authentication (sign up/sign in)
-- [x] Video player page with embedded videos
-- [x] Like/dislike functionality
-- [x] Comment system (add, edit, delete)
-- [x] Channel creation and management
-- [x] User profile management
-- [x] Mobile-responsive design
-- [x] Mock data integration
 
-### 🔄 Ready for Backend Integration
-- [ ] MongoDB database setup
-- [ ] Express.js API routes
-- [ ] JWT authentication middleware
-- [ ] Video upload functionality
-- [ ] Real-time comment updates
-- [ ] User subscription system
-- [ ] Video analytics
+### ✅ Completed (Frontend)
+- ✅ Responsive header with search functionality
+- ✅ Collapsible sidebar navigation
+- ✅ Video grid with 12 sample videos
+- ✅ Category filtering (Technology, Education, Design, etc.)
+- ✅ Video search functionality
+- ✅ User authentication (sign up/sign in)
+- ✅ Video player page with embedded videos
+- ✅ Like/dislike functionality
+- ✅ Comment system (add, edit, delete)
+- ✅ Channel creation and management
+- ✅ User profile management
+- ✅ Mobile-responsive design
+- ✅ Mock data integration
+
+### ✅ Completed (Backend)
+- ✅ MongoDB database setup
+- ✅ Express.js API routes
+- ✅ JWT authentication middleware
+- ✅ Video upload functionality
+- ✅ Real-time comment updates
+- ✅ User subscription system
+- ✅ Video analytics
+- ✅ RESTful API design
+- ✅ Input validation and sanitization
+- ✅ Error handling middleware
+- ✅ File upload with Cloudinary
+- ✅ Password hashing with bcrypt
+- ✅ CORS and security middleware
+- ✅ Rate limiting protection
+- ✅ Database models and schemas
+
+### 🚀 Ready for Production
+- ✅ Complete MERN stack application
+- ✅ Frontend-Backend integration
+- ✅ Database connectivity
+- ✅ Authentication system
+- ✅ Video management system
+- ✅ Comment system
+- ✅ Channel management
+- ✅ Responsive design
+- ✅ Security implementation
+- ✅ API documentation
 
 ## 🔧 Technologies Used
 
@@ -251,24 +301,6 @@ The codebase follows modern React patterns:
    - Caching strategies
    - Bundle optimization
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🙏 Acknowledgments
-
-- YouTube for design inspiration
-- React and Tailwind CSS communities
-- All contributors and testers
-
----
-
-**Note**: This is a educational project for learning MERN stack development. Not affiliated with YouTube.
+Made wuth all ❤️ by Abhishek Hiwarkar
